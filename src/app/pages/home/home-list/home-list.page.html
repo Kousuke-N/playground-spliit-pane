@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf="!isMenu && isMenuOpen; else IsMenu">
+    右のリストから案件を選択して下さい
+  </ng-container>
+  <ng-template #IsMenu>
+    <ion-item routerLink="/tabs/home/1">
+      <ion-label>1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>1</ion-label>
+    </ion-item>
+  </ng-template>
+</ion-content>
